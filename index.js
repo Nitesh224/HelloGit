@@ -44,4 +44,31 @@ console.log(num);
  var num = 200;
  console.log(`half of ${num} is ${num/2}`);
  // computing is done first inside the curly braces then string is printed.
- 
+ //var has some problem
+ // 1) redeclaration is allowed
+ var r ="hello"
+ console.log(r);
+ var r=100;
+ console.log(r);
+ //overcome karne ke liye
+ // let keyword is used
+ let l=100;
+ console.log(l);
+ //let l="200";//SyntaxError: Identifier 'l' has already been declared
+ console.log(l);
+ //we can reintialize a variable but we cannot redeclare it.
+ l=300;
+ console.log(l);
+ //loops in JS
+ var num =10;
+ for(var i=0;i<num;i++){
+     if(i%2==0){
+     console.log("num is even");
+     }
+ }
+ //const keyword
+ const a=2;//na he redeclare na he reintialize
+ console.log(a);
+ //const a=5;
+ //TypeError: Assignment to constant variable
+ a=4;
