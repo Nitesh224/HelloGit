@@ -32,4 +32,17 @@ returnedfunc();
 let sayHi=function(){
     console.log("Hello guys");
 }
+console.log(""+sayHi);
 sayHi();
+//IIFE-> Immediately invoke function expression
+function add(a,b){
+   return a+b;
+
+}
+add(2,3);
+let additionIIFE=(function(a,b){
+    console.log(a+b);
+
+})(20,30);
+//console.log(additionIIFE);
+//console.log(additionIIFE(20,30))
