@@ -61,14 +61,26 @@ console.log(num);
  console.log(l);
  //loops in JS
  var num =10;
+ let j=20;
  for(var i=0;i<num;i++){
+     let j=200;
      if(i%2==0){
+         let hello=1000;
      console.log("num is even");
+     console.log(hello);
      }
+     console.log("inner"+j);
  }
+ console.log("outer "+j);
+ console.log(`value of i is ${i}`);
+ console.log(hello);//erroe dega hello is not defined
  //const keyword
- const a=2;//na he redeclare na he reintialize
- console.log(a);
+ //const a=2;//na he redeclare na he reintialize
+ //console.log(a);
  //const a=5;
  //TypeError: Assignment to constant variable
- a=4;
+ //a=4;
+ //2nd problem with var keyword
+ //var keyword is function scoped in case of function else it is global scope
+ //let keyword is block scoped
+ //
